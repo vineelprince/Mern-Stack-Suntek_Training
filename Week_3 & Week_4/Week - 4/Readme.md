@@ -1,4 +1,3 @@
-# Todays Topics
 ### 1. Projections
 ### 2. Unique Properties
 ### 3. Saving Password
