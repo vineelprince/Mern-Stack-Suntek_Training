@@ -1,0 +1,52 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgba(197, 240, 23, 0.205);
+}
+
+.main{
+    width: 80vw;
+    margin: auto;
+}
+
+.logoContainer{
+    display: flex;
+    gap: 15px;
+}
+.logo{
+    width: 200px;
+    height: 250px;
+}
+
+span{
+    color: rgb(219, 20, 20);
+}
+a{
+    text-decoration: none;
+}
+
+/* test page */
+
+.test-main{
+    background-color: white;
+    width: 99vw;
+    height: 100%;
+    
+
+    
+}
+
+.first img{
+    width: 300px;
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 6px;
+}
+
+.second img{
+    width: 300px;
+    float: right;
+    margin-left: 15px;
+    margin-bottom: 6px;
+}
+

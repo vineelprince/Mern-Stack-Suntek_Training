@@ -1,0 +1,19 @@
+body{
+    width: 98vw;
+    height: 100vh;
+
+}
+.middle{
+    display: flex;
+}
+
+
+
+.right-img{
+    width: 400px;
+    height: 300px;
+}
+.footer{
+    border-top: 2px solid rgb(105, 102, 102);
+   
+}

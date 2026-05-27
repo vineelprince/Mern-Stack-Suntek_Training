@@ -1,0 +1,129 @@
+### User Register
+POST http://localhost:4000/user-api/users
+Content-Type: application/json
+
+{
+    "firstName": "sai",
+    "lastName": "teja",
+    "email": "sai.teja@example.com",
+    "password": "password123",
+    "profileImageUrl": "https://example.com/profile-picture.jpg"
+}
+
+### User Login
+POST http://localhost:4000/common-api/login
+Content-Type: application/json
+
+{
+    "email": "anurag.sharma@example.com",
+    "password": "password123"
+}
+
+
+### REading all articles from user side
+GET http://localhost:4000/user-api/user/698965e1075606f41d6fcf75/articles
+
+
+### Commenting on an article
+PUT http://localhost:4000/user-api/user/698965e1075606f41d6fcf75/article/69897e0dd3b67969646b04f3
+Content-Type: application/json
+
+{
+    "comment": "This is a comment on the article second time."
+}
+
+
+
+
+
+
+
+### Author Register
+POST http://localhost:4000/author-api/users
+Content-Type: application/json
+
+{
+    "firstName": "test2",
+    "lastName": "author",
+    "email": "test2.author@example.com",
+    "password": "password123",
+    "profileImageUrl": "https://example.com/profile-picture.jpg"
+}
+
+### Author Login
+POST http://localhost:4000/common-api/login
+Content-Type: application/json
+
+{
+    "email": "test2.author@example.com",
+    "password": "password123"
+}
+
+### Create article
+POST http://localhost:4000/author-api/articles
+Content-Type: application/json
+
+{
+    "author":"69896622075606f41d6fcf79",
+    "title": "My second Article",
+    "category": "programming",
+    "content": "This is the content of my second article."
+}
+
+
+
+### Read all articles by an author
+GET http://localhost:4000/author-api/articles/6989aab11e2b25b09d9277f0
+
+### Update an article (AUTHOR)
+PUT http://localhost:4000/author-api/articles
+Content-Type: application/json
+
+{
+    "author":"69896622075606f41d6fcf79",
+    "articleId" : "69898278c8c9f32745bfada5",
+    "title": "My second Article2",
+    "category": "programming2",
+    "content": "This is the content of my second article updated again."
+}
+
+### Soft delete an article (AUTHOR)
+PUT http://localhost:4000/author-api/author/69896622075606f41d6fcf79/article/69898241c8c9f32745bfad9d
+
+
+
+### Admin Login
+POST http://localhost:4000/common-api/login
+Content-Type: application/json
+
+{
+    "email": "admin@work.com",
+    "password": "adminworks"
+}
+
+### Admin reading all articles
+GET http://localhost:4000/admin-api/6989dd894c9c2530cab2c120/articles
+
+### block the user (ADMIN)
+PUT http://localhost:4000/admin-api/6989dd894c9c2530cab2c120/block/698965e1075606f41d6fcf75
+
+### unblock the user (ADMIN)
+PUT http://localhost:4000/admin-api/6989dd894c9c2530cab2c120/unblock/698965e1075606f41d6fcf75
+
+
+### change password
+PUT http://localhost:4000/common-api/change-password
+Content-Type: application/json
+
+{
+    "email": "anurag.sharma@example.com",
+    "oldPassword": "password123",
+    "newPassword": "newpassword123"
+}
+
+
+### LOGOUT
+GET http://localhost:4000/common-api/logout
+
+### test request
+GET http://localhost:4000/test

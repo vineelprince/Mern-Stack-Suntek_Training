@@ -1,0 +1,52 @@
+
+### Creating the new user
+POST http://localhost:4000/user-api/users
+Content-Type: application/json
+
+{
+    "name":"DJEMAIL",
+    "email":"djemail@gmail.com",
+    "password": "DJEMAIL"
+}
+
+###  Login for user
+
+POST http://localhost:4000/user-api/auth
+Content-Type: application/json
+
+{
+    "name":"DJEMAIL",
+    "password":"DJEMAIL"
+}
+
+### Create new product req
+
+POST http://localhost:4000/product-api/products
+Content-Type: application/json
+
+{
+    "productName":"Trimmer",
+    "price":4000,
+    "brand":"panasonic"
+}
+
+### Getting all the products
+GET http://localhost:4000/product-api/products
+
+### Create user req
+POST http://localhost:4000/user-api/users
+Content-Type: application/json
+
+{
+    "name":"testing",
+    "email":"testing@gmail.com",
+    "password":"testing",
+    "cart":[]
+}
+
+### REq to add product to cart
+# PUT http://localhost:4000/user-api/user-cart/userid/<userid>/productid/<productid>
+PUT http://localhost:4000/user-api/user-cart/user-id/69818dee31acbd2589139b14/product-id/698069165af5f9f40054a887
+
+### Reading the user by id
+GET http://localhost:4000/user-api/users/69818dee31acbd2589139b14
